@@ -11,6 +11,7 @@ class CreateTextsTable extends Migration
             $table->increments('id');
             $table->string('titulo');
             $table->string('conteudo');
+            $table->string('local');
             $table->timestamps();
         });
     }

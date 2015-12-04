@@ -18,6 +18,7 @@ class CreateTextsRequest extends Request
             'id',
             'titulo' => 'required',
             'conteudo' => 'required',
+            'local' => 'required',
         ];
     }
 }

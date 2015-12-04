@@ -17,6 +17,7 @@ class TextTableSeeder extends Seeder
                     'conteudo' => str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' .
                         str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' .
                         str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7) . ' ' . str_random(7),
+                    'local' => 'Home',
                 ]);
             }
         }

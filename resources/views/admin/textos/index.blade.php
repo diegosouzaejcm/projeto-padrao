@@ -36,6 +36,7 @@
                         <th>ID</th>
                         <th>Título</th>
                         <th>Conteúdo</th>
+                        <th>Local</th>
                         <th class="actions">Ações</th>
                     </tr>
                     </thead>
@@ -45,6 +46,7 @@
                             <td>{{$text->id}}</td>
                             <td>{{$text->titulo}}</td>
                             <td>{{$text->conteudo}}</td>
+                            <td>{{$text->local}}</td>
                             <td class="actions">
                                 <a class="btn btn-warning btn" href="{{ url('perfil/textos/'.$text->id.'/edit') }}">
                                     Editar

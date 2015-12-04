@@ -22,6 +22,19 @@
                     <br>
                     <textarea type="text" name="conteudo" class="form-control" id="conteudo" size="300"  maxlength="120" placeholder="  Insira o conteúdo do texto (máximo de 120 caracteres)"></textarea>
                 </div>
+
+                <div class="form-group col-md-offset-1 col-md-6">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Local:
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+                            <li>&nbsp;&nbsp;<input type="radio" name = "local" value="Home" id="Home"> Home</input><br></li>
+                            <li>&nbsp;&nbsp;<input type="radio" name = "local" value="Relatos" id="Relatos"> Relatos</input><br></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <hr />

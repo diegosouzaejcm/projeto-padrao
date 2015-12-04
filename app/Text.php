@@ -8,5 +8,5 @@ class Text extends Model
 {
     protected $table = 'texts';
 
-    protected $fillable = ['titulo', 'conteudo'];
+    protected $fillable = ['titulo', 'conteudo', 'local'];
 }

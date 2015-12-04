@@ -34,6 +34,7 @@
 			<div class="collapse navbar-collapse" id="navbar">
 				<ul class="nav navbar-nav">
 					<li><a href="{{ url('/') }}">Home</a></li>
+					<li><a href="{{ url('/') }}">Relatos</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -50,8 +51,10 @@
 							<ul class="dropdown-menu" role="menu">
 								@if(Auth::user()->isAdmin())
 									<li><a href="{{ url('/perfil') }}">Tu é fodão</a></li>
+									@else
+									<li><a href="{{ url('/perfil') }}">Perfil</a></li>
 								@endif
-								<li><a href="{{ url('/auth/logout') }}">Logout</a></li>
+								<li><a href="{{ url('/auth/logout') }}">Sair</a></li>
 							</ul>
 						</li>
 					@endif

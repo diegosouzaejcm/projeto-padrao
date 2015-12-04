@@ -11,11 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@getIndex');
 
-Route::get('perfil', ['middleware' => ['auth', 'admin'], function() {
+Route::get('perfil', ['middleware' => ['admin'], function() {
     return view('home-admin');
 }]);
 
@@ -32,7 +30,7 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 
-Route::group(["prefix" => "perfil", 'middleware' => 'auth','admin'], function() {
+Route::group(["prefix" => "perfil", 'middleware' =>'admin'], function() {
 
     Route::get('/textos','TextController@index');
     Route::get('/textos/create','TextController@create');

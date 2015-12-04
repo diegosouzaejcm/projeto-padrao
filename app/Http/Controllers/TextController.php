@@ -49,6 +49,7 @@ class TextController extends Controller
         $data = array(
             'titulo' => $post['titulo'],
             'conteudo' => $post['conteudo'],
+            'local' => $post['local'],
         );
 
         \DB::table('texts')-> where ('id', $post['id'])->update($data);
