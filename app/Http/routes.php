@@ -13,6 +13,8 @@
 
 Route::get('/', 'HomeController@getIndex');
 
+Route::get('relatos', 'HomeController@getRelatos');
+
 Route::get('perfil', ['middleware' => ['admin'], function() {
     return view('home-admin');
 }]);

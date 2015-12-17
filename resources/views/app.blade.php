@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -33,7 +33,8 @@
 
 			<div class="collapse navbar-collapse" id="navbar">
 				<ul class="nav navbar-nav">
-					<li><a href="{{ url('/') }}">Home</a></li>
+					<li><a href="{{ url('/') }}">Principal</a></li>
+					<li><a href="{{ url('/relatos') }}">Relatos</a></li>					
 					<li><a href="{{ url('/contato') }}">Contato</a></li>
 				</ul>
 

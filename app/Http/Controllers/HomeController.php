@@ -15,6 +15,12 @@ class HomeController extends Controller
         return view('welcome')->with('texts', $texts);
     }
 
+    public function getRelatos()
+    {
+    	$texts = \App\Text::all();
+	return view('relatos')->with('texts', $texts);
+    }
+
     public function create()
     {
         //
