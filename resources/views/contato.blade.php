@@ -1,13 +1,14 @@
 @extends('app')
 
-@section('content')
 
-    <!--Essa View tem altas gambiarras com <br> que deviam ser alteradas por CSS, MAS ESSE PROJETO NAO TEM ARQUIVO CSS ! COMO ASSIM ??-->
+@section('content')
 
 <div class="container">
     <div class="row">
 
-        <h2><strong><u>Contatos</u></strong></h2><br>
+<!--Essa View tem altas gambiarras com <br> que deviam ser alteradas por CSS, MAS ESSE PROJETO NAO TEM ARQUIVO CSS ! COMO ASSIM ??-->
+
+	<h2><strong><u>Contatos</u></strong></h2><br>
 
         <div class="col-sm-6 col-md-4">
 
@@ -26,7 +27,7 @@
             <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>&nbsp;( 21 ) 2569-6969<br><br>
 
         </div>
-
+	
         <p><strong><br><br><br>Ou, se preferir,<br>Contate-nos por aqui</strong></p>
 
         <form action="{{ action ('ContatoController@store') }}" method="post">
