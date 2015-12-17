@@ -17,9 +17,14 @@ Route::get('perfil', ['middleware' => ['admin'], function() {
     return view('home-admin');
 }]);
 
+//Bug Login Laravel
 Route::get('home', function (){
   return redirect('/');
 });
+
+//Contatp
+Route::get('contato', 'ContatoController@index');
+Route::post('contato', 'ContatoController@store');
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
