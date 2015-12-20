@@ -48,7 +48,7 @@
                 <br><br>
                 <label for="Telefone">Telefone:</label>
                 <br>
-                <input class="form-control" type="text" name="Telefone" id="Telefone" size="38" autofocus placeholder="  ex: ( 21 ) 4002-8922">
+                <input class="form-control" type="text" name="Telefone" id="Telefone" size="38" data-mask="00/00/0000" autofocus placeholder="  ex: ( 21 ) 4002-8922">
 
                 @if($errors->has('Telefone'))
                     <ul class="alert alert-danger contacterror" >
@@ -109,6 +109,6 @@
 
 </div>
 
-<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 
 @endsection

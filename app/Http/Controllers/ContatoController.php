@@ -37,8 +37,8 @@ class ContatoController extends Controller
                 $data =  $request->only('Nome', 'Telefone', 'Email','Mensagem');
 
                 Mail::send('emails.email',$data, function($mensagem) use($data){
-                    $mensagem->to('diegorodsouza1997@gmail.com', 'DOGE')
-                        ->from('helo@empresa.com.br', 'Empresa')
+                    $mensagem->to('contato@email.com', 'Empresa')
+                        ->from('site@email.com', 'Contato')
                         ->subject ('Novo Contato de Cliente');
 
                 });
